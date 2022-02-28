@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home-test-view', 'HomeController@index');
+
+Route::get('/properties-test-view', 'HomeController@properties');
+Route::post('/filter', 'HomeController@properties');
